@@ -1,0 +1,31 @@
+:root {
+  --paper: #f6f1e4;
+  --paper-line: #c9bfa3;
+  --paper-margin: #d9a6a0;
+  --ink: #2c3e66;
+  --ink-soft: #5b6b8c;
+  --rust: #a8462f;
+  --rust-soft: #c98370;
+  --shadow: rgba(44, 62, 102, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Sarabun', sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  min-height: 100vh;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
